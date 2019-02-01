@@ -10,12 +10,32 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  function price(min,max){
+var price=Math.floor(Math.random()*(min-max+1)+min);
+}
+var item2={
+  itemName:item,
+  itemPrice:price
+};
+function getCart(){
+  return `${itemName[i]}` +", "+ `${itemPrice[i]}`
 }
 
-function viewCart() {
-  // write your code here
+cart.push(`${item} has been added to your cart.`);
+i++
+return cart
 }
+
+
+function viewCart() {
+if(0===cart.length){
+  return "Your shopping cart is empty."
+}
+else(cart.lenght>=1,i++)
+  return `In your cart, you have ${item} at ${price}`
+
+}
+
 
 function total() {
   // write your code here
